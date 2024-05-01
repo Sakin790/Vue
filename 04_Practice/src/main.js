@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import From from "./From.vue"
+import { createApp } from "vue";
+import "./style.css";
 
-createApp(From).mount('#app')
+import Conditional from "./Conditional.vue";
+
+createApp(Conditional).mount("#app");
