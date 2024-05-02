@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import "./style.css";
 
-import Conditional from "./Conditional.vue";
+import Todo from "./Todo.vue";
 
-createApp(Conditional).mount("#app");
+createApp(Todo).mount("#app");
