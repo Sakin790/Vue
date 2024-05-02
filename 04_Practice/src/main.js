@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import "./style.css";
 
-import loop from "./loop.vue";
+import Codinate from "./Codinate.vue";
 
-createApp(loop).mount("#app");
+createApp(Codinate).mount("#app");
