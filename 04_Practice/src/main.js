@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import "./style.css";
 
-import Todo from "./Todo.vue";
+import Fetch from "./Fetch.vue";
 
-createApp(Todo).mount("#app");
+createApp(Fetch).mount("#app");
