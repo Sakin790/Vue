@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../View/Home.vue";
-import About from "../View/About.vue";
+
+const Home = () => import("../View/Home.vue");
+const About = () => import("../View/About.vue");
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -8,4 +9,5 @@ export const router = createRouter({
     { path: "/", name: "home", component: Home },
     { path: "/about", name: "about", component: About },
   ],
+  linkActiveClass: "active-link",
 });
