@@ -5,7 +5,7 @@ const About = () => import("../view/About.vue");
 const Contact = () => import("../view/Contact.vue");
 
 const routes = [
-  { path: "/", component: Home },
+  { path: "/", name: "profile", component: Home },
   { path: "/about", component: About },
   { path: "/contact", component: Contact },
 ];
