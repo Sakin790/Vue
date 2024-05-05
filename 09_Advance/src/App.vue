@@ -1,4 +1,6 @@
 <script>
+import Header from "./View/Header.vue";
+
 export default {
   data() {
     return {
@@ -7,8 +9,8 @@ export default {
       life: 90,
     };
   },
-  computed: {
-    
+  components: {
+    Header,
   },
   methods: {
     incrementScore() {
@@ -25,6 +27,7 @@ export default {
 
 <template>
   <div>
+    <Header />
     <h1>Advance Vue {{ age }}</h1>
     <h2>{{ score }}</h2>
     <h2>{{ life }}</h2>
