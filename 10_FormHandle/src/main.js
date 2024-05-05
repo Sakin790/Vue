@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import Api from './Api.vue'
+import Reactive from './Reactive.vue'
 
 
-createApp(Api).mount('#app')
+createApp(Reactive).mount('#app')

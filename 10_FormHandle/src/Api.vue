@@ -6,13 +6,14 @@
       return {
         todo: {},
         error: null,
+        id: 1,
       };
     },
     methods: {
       async getHealth() {
         try {
           const response = await axios.get(
-            "https://jsonplaceholder.typicode.com/todos/6"
+            `https://jsonplaceholder.typicode.com/todos/${this.id}`
           );
           this.todo = response.data;
         } catch (error) {
@@ -21,6 +22,8 @@
         }
       },
     },
+
+    
   };
 </script>
 
@@ -33,7 +36,7 @@
       <p>User ID: {{ todo.userId }}</p>
       <p>ID: {{ todo.id }}</p>
       <p>Title: {{ todo.title }}</p>
-      <p>Completed: {{ todo.completed ? "Yes" : "No" }}</p>
+
     </div>
     <div v-else-if="error">
       <p>Error: {{ error.message }}</p>
