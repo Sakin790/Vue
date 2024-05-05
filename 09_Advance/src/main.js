@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue'
-import Parent from './Parent.vue'
+import Root from './Root.vue'
 
-createApp(Parent).mount('#app')
+
+createApp(Root).mount('#app')
